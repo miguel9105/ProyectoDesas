@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Route;
 use Livewire\Volt\Volt;
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
 })->name('home');
 
 Route::view('dashboard', 'dashboard')
@@ -20,6 +20,8 @@ Route::middleware(['auth'])->group(function () {
 });
 
 require __DIR__.'/auth.php';
+
+
 
 //ormCONSULTAS
 Route::get('ormconsultas', [OrmController::class,'consultas']);
@@ -51,6 +53,7 @@ Route::controller(NotificationController::class)->group(function () {
     Route::post('/notificacion', 'respuesta_notificacion')->name('notificacion.respuesta_notificacion');
 });
 
-Route::get('/vite', function () {
-    return view('index');
-});
+// Ruta para la vista 'conocenos'
+Route::get('/conocenos', function () {
+    return view('conocenos');
+  });

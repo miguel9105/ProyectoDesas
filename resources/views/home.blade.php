@@ -1,5 +1,5 @@
-@extends('layouts.noRegister')
-@section('contend')
+@extends('components.layouts.noRegister')
+@section('content')
     
 <!-- About-->
 </nav>

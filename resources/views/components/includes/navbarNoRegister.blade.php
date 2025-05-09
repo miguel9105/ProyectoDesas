@@ -8,10 +8,9 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item"><a class="nav-link" href="">Inicio</a></li>
-                <li class="nav-item"><a class="nav-link" href="#projects">Buzón reportes</a></li>
-                <li class="nav-item"><a class="nav-link" href="#signup">Publicar</a></li>
-                <li class="nav-item"><a class="nav-link" href="#signup">Chat</a></li>
-                <li class="nav-item"><a class="nav-link" href="#signup">Conócenos</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{ route('login') }}">Publicar</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{ route('login') }}">Chat</a></li>
+                <li class="nav-item"><a class="nav-link" href="">Conócenos</a></li>
                 <li class="nav-item"><a class="nav-link" href="{{ route('login') }}">Iniciar sesión</a></li>
             </ul>
         </div>
