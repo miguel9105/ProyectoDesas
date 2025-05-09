@@ -3,7 +3,7 @@
 use App\Http\Controllers\Auth\VerifyEmailController;
 use Illuminate\Support\Facades\Route;
 use Livewire\Volt\Volt;
-
+//interceptar peticiones rutas de invitado publicas
 Route::middleware('guest')->group(function () {
     Volt::route('login', 'auth.login')
         ->name('login');
@@ -18,7 +18,7 @@ Route::middleware('guest')->group(function () {
         ->name('password.reset');
 
 });
-
+//middleware seencarga de que las rutas esten protegidas
 Route::middleware('auth')->group(function () {
     Volt::route('verify-email', 'auth.verify-email')
         ->name('verification.notice');
