@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PublicationController;
+use App\Models\Publication;
 use Livewire\Volt\Volt;
 
 Route::get('/', function () {
@@ -20,6 +22,13 @@ Route::middleware(['auth'])->group(function () {
 });
 
 require __DIR__.'/auth.php';
+
+
+Route::get('/publications', [PublicationController::class, 'index'])->name('publications.index');
+Route::post('/publications', [PublicationController::class, 'store'])->name('publications.store');
+Route::get('/publications/{publication}', [PublicationController::class, 'show'])->name('publications.show');
+Route::put('/publications/{publication}', [PublicationController::class, 'update'])->name('publications.update');
+Route::delete('/publications/{publication}', [PublicationController::class, 'destroy'])->name('publications.destroy');
 
 //ormCONSULTAS
 Route::get('ormconsultas', [OrmController::class,'consultas']);
@@ -54,3 +63,4 @@ Route::controller(NotificationController::class)->group(function () {
 Route::get('/vite', function () {
     return view('index');
 });
+
