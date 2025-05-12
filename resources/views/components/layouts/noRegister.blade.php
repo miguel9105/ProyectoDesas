@@ -20,11 +20,11 @@
 </head>
 <body>
     
-    @include('includes.navbar')
+    @include('components.includes.navbarNoRegister')
 
-    @yield('contend')
+    @yield('content')
 
-    @include('includes.footer')
+    @include('components.includes.footer')
 
 </body>
 </html>

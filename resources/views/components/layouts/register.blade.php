@@ -16,15 +16,15 @@
         
         
         <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="{{asset('css/index.css')}}" rel="stylesheet" />
+        <!--<link href="{{asset('css/index.css')}}" rel="stylesheet"-->
 </head>
 <body>
     
-    @include('includes.navbar')
+    @include('components.includes.navbar')
 
-    @yield('contend')
+    @yield('content')
 
-    @include('includes.footer')
+    @include('components.includes.footer')
 
 </body>
 </html>

@@ -1,6 +1,6 @@
 @extends('layouts.noRegister')
 
-@section('contend')
+@section('content')
 
 <style>
     body, html {

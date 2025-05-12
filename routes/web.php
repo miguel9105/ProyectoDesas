@@ -10,7 +10,7 @@ use App\Http\Controllers\RoleController;
 use App\Http\Controllers\NotificationController;
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
 })->name('home');
 
 // Panel de usuario (requiere autenticación)
@@ -28,9 +28,11 @@ Route::middleware(['auth'])->group(function () {
 
 require __DIR__.'/auth.php';
 
-// -------------------------- //
-//           RUTAS            //
-// -------------------------- //
+
+
+//ormCONSULTAS
+Route::get('ormconsultas', [OrmController::class,'consultas']);
+
 
 // OrmConsultas
 Route::get('ormconsultas', [OrmController::class, 'consultas']);
@@ -63,7 +65,11 @@ Route::controller(NotificationController::class)->group(function () {
     Route::post('/notificacion', 'respuesta_notificacion')->name('notificacion.respuesta_notificacion');
 });
 
-// Vite prueba
-Route::get('/vite', function () {
-    return view('index');
-});
+
+
+
+// Ruta para la vista 'conocenos'
+Route::get('/conocenos', function () {
+    return view('conocenos');
+  });
+
