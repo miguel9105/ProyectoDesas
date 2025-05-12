@@ -298,13 +298,10 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
 
-                <!-- FORMULARIO CORREGIDO: -->
-                <!-- 1. Eliminamos la acción fija -->
-                <!-- 2. El JavaScript establecerá la URL dinámicamente -->
                 <form id="editPublicationForm" method="POST" enctype="multipart/form-data">
                     @csrf
                     @method('PUT')
-                    <!-- Campo oculto para el ID (opcional, alternativa al JavaScript) -->
+                    <!-- Campo oculto para el ID -->
                     <input type="hidden" name="id" id="edit_publication_id">
                     
                     <div class="modal-body">

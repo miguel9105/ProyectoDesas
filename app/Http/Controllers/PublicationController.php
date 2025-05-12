@@ -81,7 +81,7 @@ class PublicationController extends Controller
         return redirect()->route('publications.index')
             ->with('success', 'Publicación creada exitosamente.');
     }
-//
+
     public function show(Publication $publication)
     {
         // devuelve la publicacion solicitada en formato json

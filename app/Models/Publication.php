@@ -35,7 +35,7 @@ class Publication extends Model
         'media' => 'Media',
         'baja' => 'Baja'
     ];
-//
+
     // accesor que te da la url completa de la imagen
     public function getImageUrlAttribute()
     {

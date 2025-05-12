@@ -8,9 +8,9 @@ return new class extends Migration
 {
     
    public function up(): void
-{
-    // crea la tabla publications en la base de datos
-    Schema::create('publications', function (Blueprint $table) {
+    {
+        // crea la tabla publications en la base de datos
+        Schema::create('publications', function (Blueprint $table) {
         // crea una columna para cada atributo de la tabla
         $table->id();
         $table->string('title');
@@ -21,12 +21,12 @@ return new class extends Migration
         $table->string('image')->nullable();
         $table->timestamps();
     });
-}
+    }
 
-public function down(): void
-{
-    // elimina la tabla publications si existe
-    Schema::dropIfExists('publications');
-}
-//
+    public function down(): void
+    {
+        // elimina la tabla publications si existe
+        Schema::dropIfExists('publications');
+    }
+
 };
