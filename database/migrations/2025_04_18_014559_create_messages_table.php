@@ -10,19 +10,15 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('messages', function (Blueprint $table) {
-            $table->id();
-            $table->string('content');
-            $table->string('is_admin_message');
-            $table->string('is_read');
-            $table->unsignedBigInteger('role_id') ->nullable(); // Relacion con la tabla roles
-            $table->foreign('role_id')
-            ->references('id')
-            ->on('roles')
-            ->onDelete('cascade');
-            $table->timestamps();
-
-        });
+      Schema::create('messages', function (Blueprint $table) {
+    $table->id();
+    $table->text('content');
+    $table->boolean('is_admin_message')->default(false);
+    $table->boolean('is_read')->default(false);
+    $table->foreignId('user_id')->nullable()->constrained()->onDelete('cascade'); // Relación con users
+    $table->foreignId('role_id')->nullable()->constrained()->onDelete('cascade'); // Relación con roles
+    $table->timestamps();
+});
     }
 
     /**
