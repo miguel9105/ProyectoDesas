@@ -45,7 +45,7 @@
                     </button>
                 </div>
             </div>
-            
+            <!---->
             <!-- seccion de filtros con fondo blanco semitransparente y bordes redondeados -->
             <div class="bg-white bg-opacity-90 rounded-4 shadow-sm p-4 mb-5">
                 <!-- formulario de filtrado que envia los parametros por GET -->

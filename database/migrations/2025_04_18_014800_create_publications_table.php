@@ -28,5 +28,5 @@ public function down(): void
     // elimina la tabla publications si existe
     Schema::dropIfExists('publications');
 }
-
+//
 };
