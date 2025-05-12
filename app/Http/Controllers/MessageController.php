@@ -28,7 +28,7 @@ class MessageController extends Controller
         $request->validate([
             'content' => 'required|string',
         ]);
-
+        
         // Creamos una nueva instancia del modelo Message para guardar el nuevo mensaje
         $message = new Message();
         // Asignamos el contenido del mensaje que llega a través de la solicitud
@@ -40,18 +40,18 @@ class MessageController extends Controller
         $user = Auth::user();
         
         // Verificamos si el usuario está autenticado y si su rol es de administrador (suponiendo que el role_id 1 corresponde a administrador)
-        $message->is_admin_message = $user && $user->role_id == 1;
+        $message->is_admin_message = ($user && $user->role_id == 1) ? true : true;
         
         // Asignamos el ID del usuario si está autenticado, o null si no lo está
         $message->user_id = $user ? $user->id : null;
 
         // Asignamos el role_id del usuario, o 2 si el usuario no está autenticado (suponiendo que 2 es otro rol)
-        $message->role_id = $user ? $user->role_id : 2;
+        $message->role_id = $user ? $user->role_id : 1;
 
         // Guardamos el nuevo mensaje en la base de datos
         $message->save();
 
         // Redirigimos al usuario de vuelta con un mensaje de éxito
         return redirect()->back()->with('success', 'Mensaje enviado con éxito.');
-    }
+}
 }
