@@ -57,4 +57,14 @@ class User extends Authenticatable
             ->map(fn (string $name) => Str::of($name)->substr(0, 1))
             ->implode('');
     }
+      use HasFactory;
+
+    public function messages()
+    {
+        return $this->hasMany(Message::class);
+    }
+     public function role()
+    {
+        return $this->belongsTo(Role::class);
+    }
 }
