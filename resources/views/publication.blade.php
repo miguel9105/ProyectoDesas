@@ -22,8 +22,11 @@
 
     @vite(['resources/js/app.js'])
 </head>
-<body id="page-top" class="bg-dark" style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url('{{ asset('assets/img/bg-masthead.jpg') }}'); background-position: center; background-repeat: no-repeat; background-attachment: fixed; background-size: cover; padding-top: 120px;">
+<body id="page-top" class="bg-dark" style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.7) 75%, #000000 100%), url('{{ asset('assets/img/bg-masthead.jpg') }}'); background-position: center; background-repeat: no-repeat; background-attachment: fixed; background-size: cover; padding-top: 120px;">
     <!-- cuerpo de la pagina con fondo oscuro, gradiente superpuesto sobre imagen de fondo fija -->
+
+    @extends('layouts.register')
+    @section('contend')
 
         <!-- contenedor principal que alberga todo el contenido de la pagina -->
         <div class="container px-4 px-lg-5">
@@ -364,7 +367,7 @@
             </div>
         </div>
     </div>
-    
+    @endsection
 </body>
 </html>
 
