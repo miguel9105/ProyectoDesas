@@ -22,29 +22,8 @@
         }
     </style>
 
-    <!-- Navbar: Barra de navegación fija en la parte superior -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
-        <div class="container px-4 px-lg-5">
-            <!-- Enlace al logo -->
-            <a class="navbar-brand" href="#page-top">logo</a>
-            <!-- Botón que despliega el menú en dispositivos móviles -->
-            <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                Menu
-                <i class="fas fa-bars"></i>
-            </button>
-            <!-- Menú de navegación que se despliega -->
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#about">Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#projects">Buzón reportes</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#signup">Publicar</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#signup">Chat</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#signup">Conócenos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{{ route('login') }}">Cerrar sesión</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+@extends('components.layouts.noRegister')
+@section('content')
 
     <!-- Sección de chat de mensajes -->
     <section class="container py-5" style="margin-top: 80px;">
@@ -123,12 +102,7 @@
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="footer small text-center text-white-50 py-4" style="background-color: rgb(0, 0, 0);">
-        <div class="container px-4 px-lg-5">
-            Copyright &copy; Desas3 2025-2026
-        </div>
-    </footer>
+@endsection
 
     <!-- Scripts de Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
@@ -136,5 +110,6 @@
     <script src="js/scripts.js"></script>
     <!-- Script para formularios -->
     <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+
 </body>
 </html>
