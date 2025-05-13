@@ -1,55 +1,105 @@
-<!-- Contact-->
-<section class="contact-section bg-black">
-    <div class="container px-4 px-lg-5">
-        <div class="row gx-4 gx-lg-5">
-            <div class="col-md-4 mb-3 mb-md-0">
-                <div class="card py-4 h-100">
-                    <div class="card-body text-center">
-                        <i class="fas fa-map-marked-alt text-primary mb-2"></i>
-                        <h4 class="text-uppercase m-0">Address</h4>
-                        <hr class="my-4 mx-auto" />
-                        <div class="small text-black-50">4923 Market Street, Orlando FL</div>
-                    </div>
+<section class="footer-natura position-relative overflow-hidden" style="background: linear-gradient(145deg, #0a0a0a 55%, #2e2e2e 45%); padding: 5rem 1rem 3rem;">
+    <div class="container">
+        <div class="row gy-5 text-center">
+            <!-- Ubicación -->
+            <div class="col-md-4">
+                <div class="footer-card-natura">
+                    <i class="fas fa-globe-americas fa-2x mb-3 icon-earth"></i>
+                    <h5 class="text-uppercase fw-bold mb-2">Ubicación</h5>
+                    <p class="mb-0 small">Calle 123, Medellín, Colombia</p>
                 </div>
             </div>
-            <div class="col-md-4 mb-3 mb-md-0">
-                <div class="card py-4 h-100">
-                    <div class="card-body text-center">
-                        <i class="fas fa-envelope text-primary mb-2"></i>
-                        <h4 class="text-uppercase m-0">Email</h4>
-                        <hr class="my-4 mx-auto" />
-                        <div class="small text-black-50"><a href="#!">hello@yourdomain.com</a></div>
-                    </div>
+            <!-- Correo -->
+            <div class="col-md-4">
+                <div class="footer-card-natura">
+                    <i class="fas fa-leaf fa-2x mb-3 icon-earth"></i>
+                    <h5 class="text-uppercase fw-bold mb-2">Correo</h5>
+                    <p class="mb-0 small">
+                        <a href="mailto:contacto@tuapp.com" class="footer-link-natura">contacto@tuapp.com</a>
+                    </p>
                 </div>
             </div>
-            <div class="col-md-4 mb-3 mb-md-0">
-                <div class="card py-4 h-100">
-                    <div class="card-body text-center">
-                        <i class="fas fa-mobile-alt text-primary mb-2"></i>
-                        <h4 class="text-uppercase m-0">Phone</h4>
-                        <hr class="my-4 mx-auto" />
-                        <div class="small text-black-50">+1 (555) 902-8832</div>
-                    </div>
+            <!-- Teléfono -->
+            <div class="col-md-4">
+                <div class="footer-card-natura">
+                    <i class="fas fa-seedling fa-2x mb-3 icon-earth"></i>
+                    <h5 class="text-uppercase fw-bold mb-2">Teléfono</h5>
+                    <p class="mb-0 small">+57 300 123 4567</p>
                 </div>
             </div>
         </div>
-        <div class="social d-flex justify-content-center">
-            <a class="mx-2" href="#!"><i class="fab fa-twitter"></i></a>
-            <a class="mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
-            <a class="mx-2" href="#!"><i class="fab fa-github"></i></a>
+
+        <!-- Redes -->
+        <div class="d-flex justify-content-center gap-4 mt-5">
+            <a href="#!" class="footer-icon-natura" title="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#!" class="footer-icon-natura" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#!" class="footer-icon-natura" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
         </div>
     </div>
-</section>
-<!-- Footer-->
-<footer class="footer bg-black small text-center text-white-50"><div class="container px-4 px-lg-5">Copyright &copy; Your Website 2023</div></footer>
-<!-- Bootstrap core JS-->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-<!-- Core theme JS-->
-<script src="js/scripts.js"></script>
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-<!-- * *                               SB Forms JS                               * *-->
-<!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-<script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
 
- 
+    <!-- Barra inferior -->
+    <div class="footer-bar-natura mt-5 py-3 px-4 text-center small">
+        <span class="text-muted">© {{ date('Y') }} TuApp — Unidos por la resiliencia, frente a la fuerza de la naturaleza 🌋🌪️🌊.</span>
+    </div>
+</section>
+
+<style>
+    .footer-card-natura {
+        background: rgba(50, 50, 50, 0.4);
+        border: 1px solid rgba(100, 100, 100, 0.3);
+        backdrop-filter: blur(5px);
+        border-radius: 1rem;
+        padding: 2rem 1rem;
+        color: #f0f0f0;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .footer-card-natura:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 25px rgba(0, 234, 255, 0.15);
+    }
+
+    .icon-earth {
+        color: #6be48c;
+        transition: transform 0.3s ease, color 0.3s ease;
+    }
+
+    .footer-card-natura:hover .icon-earth {
+        transform: scale(1.15);
+        color: #4caf50;
+    }
+
+    .footer-link-natura {
+        color: #e6fbe9;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+
+    .footer-link-natura:hover {
+        color: #81fbb8;
+    }
+
+    .footer-icon-natura {
+        color: #ccc;
+        font-size: 1.5rem;
+        transition: transform 0.3s, color 0.3s;
+    }
+
+    .footer-icon-natura:hover {
+        color: #81fbb8;
+        transform: scale(1.25);
+    }
+
+    .footer-bar-natura {
+        background: rgba(0, 0, 0, 0.3);
+        backdrop-filter: blur(6px);
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    @media (max-width: 768px) {
+        .footer-card-natura {
+            margin-bottom: 1.5rem;
+        }
+    }
+</style>
