@@ -6,7 +6,7 @@
                 <div class="footer-card-natura">
                     <i class="fas fa-globe-americas fa-2x mb-3 icon-earth"></i>
                     <h5 class="text-uppercase fw-bold mb-2">Ubicación</h5>
-                    <p class="mb-0 small">Calle 123, Medellín, Colombia</p>
+                    <p class="mb-0 small">Popayán, Colombia</p>
                 </div>
             </div>
             <!-- Correo -->
@@ -15,7 +15,7 @@
                     <i class="fas fa-leaf fa-2x mb-3 icon-earth"></i>
                     <h5 class="text-uppercase fw-bold mb-2">Correo</h5>
                     <p class="mb-0 small">
-                        <a href="mailto:contacto@tuapp.com" class="footer-link-natura">contacto@tuapp.com</a>
+                        <a href="mailto:contacto@tuapp.com" class="footer-link-natura">Desas3.666@gmail.com</a>
                     </p>
                 </div>
             </div>
@@ -39,7 +39,7 @@
 
     <!-- Barra inferior -->
     <div class="footer-bar-natura mt-5 py-3 px-4 text-center small">
-        <span class="text-muted">© {{ date('Y') }} TuApp — Unidos por la resiliencia, frente a la fuerza de la naturaleza 🌋🌪️🌊.</span>
+        <span class="text-muted">© {{ date('Y') }} Desas3 — Comunicando para salvar, conectando para proteger 🌋🌪️🌊</span>
     </div>
 </section>
 

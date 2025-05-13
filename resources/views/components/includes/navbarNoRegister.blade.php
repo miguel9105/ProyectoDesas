@@ -2,7 +2,6 @@
   <div class="container">
     <a class="d-flex align-items-center text-decoration-none" href="{{ route('home') }}">
       <img src="{{ asset('img/logo.jpg') }}" alt="Logo" class="navbar-logo me-2">
-      <span class="navbar-brand text-glow">🌿Desas3</span>
     </a>
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarGlass"
