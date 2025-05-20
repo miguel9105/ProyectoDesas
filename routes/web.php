@@ -8,10 +8,9 @@ use App\Http\Controllers\UserController;
 use App\Http\Controllers\PublicationController;
 use App\Http\Controllers\RoleController;
 use App\Http\Controllers\NotificationController;
+use App\Http\Controllers\ConocenosController;
 
-Route::get('/', function () {
-    return view('home');
-})->name('home');
+Route::get('/', [ConocenosController::class, 'Home'])->name('home');
 
 // Panel de usuario (requiere autenticación)
 Route::view('dashboard', 'dashboard')
@@ -75,7 +74,6 @@ Route::controller(NotificationController::class)->group(function () {
 
 
 // Ruta para la vista 'conocenos'
-Route::get('/conocenos', function () {
-    return view('conocenos');
-  });
+Route::get('/conocenos', [ConocenosController::class, 'index'])->name('conocenos.index');
+
 
