@@ -120,50 +120,148 @@
 </section>
 
 <!-- Services section with modern icons -->
-<section class="py-5 bg-white">
+ <section class="py-5 bg-white">
+  <div class="container py-lg-4">
+    <div class="row text-center justify-content-center mb-5">
+      <div class="col-lg-8">
+        <h2 class="display-5 fw-bold">Nuestras Soluciones</h2>
+        <div class="accent-line bg-primary mx-auto my-3" style="width: 80px; height: 4px;"></div>
+        <p class="lead text-muted">Ofrecemos servicios integrales de desarrollo tecnológico adaptados a tus necesidades</p>
+      </div>
+    </div>
+
+    <!-- Ejemplo de una tarjeta de solución con ícono circular corregido -->
+    <div class="row g-4 justify-content-center">
+      <div class="col-sm-6 col-md-4">
+        <div class="text-center p-4 shadow rounded bg-light h-100">
+          <!-- Ícono con fondo perfectamente circular -->
+          <div class="bg-primary text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-4"
+               style="width: 80px; height: 80px;">
+            <i class="fas fa-laptop-code fa-2x"></i>
+          </div>
+          <h5 class="fw-bold">Desarrollo Web</h5>
+          <p class="text-muted">Creamos sitios y aplicaciones web modernas, escalables y personalizadas con tecnologías de última generación.</p>
+        </div>
+      </div>
+
+      <!-- Puedes duplicar más tarjetas siguiendo este mismo modelo -->
+      <div class="col-sm-6 col-md-4">
+        <div class="text-center p-4 shadow rounded bg-light h-100">
+          <div class="bg-primary text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-4"
+               style="width: 80px; height: 80px;">
+            <i class="fas fa-mobile-alt fa-2x"></i>
+          </div>
+          <h5 class="fw-bold">Aplicaciones Móviles</h5>
+          <p class="text-muted">Desarrollamos apps móviles intuitivas y eficientes para iOS y Android.</p>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-4">
+        <div class="text-center p-4 shadow rounded bg-light h-100">
+          <div class="bg-primary text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-4"
+               style="width: 80px; height: 80px;">
+            <i class="fas fa-cloud fa-2x"></i>
+          </div>
+          <h5 class="fw-bold">Soluciones en la Nube</h5>
+          <p class="text-muted">Implementamos y gestionamos infraestructuras seguras y escalables en la nube.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="py-5 bg-light">
     <div class="container py-lg-4">
         <div class="row text-center justify-content-center mb-5">
             <div class="col-lg-8">
-                <h2 class="display-5 fw-bold">Nuestras Soluciones</h2>
-                <div class="accent-line bg-primary mx-auto my-3" style="width: 80px; height: 4px;"></div>
-                <p class="lead text-muted">Ofrecemos servicios integrales de desarrollo tecnológico adaptados a tus necesidades</p>
+                <h2 class="display-5 fw-bold">Nuestro Equipo</h2>
+                <div class="bg-primary mx-auto my-3" style="width: 60px; height: 3px;"></div>
+                <p class="lead text-muted">Conoce a los profesionales detrás de KodeLAMD</p>
             </div>
         </div>
-        
-        <div class="row g-4">
-            <!-- Service 1 -->
-            <div class="col-md-4">
-                <div class="card border-0 shadow-sm h-100 service-card">
-                    <div class="card-body text-center p-4">
-                        <div class="service-icon bg-primary text-white rounded-circle mx-auto mb-4 d-flex align-items-center justify-content-center">
-                            <i class="fas fa-laptop-code fa-2x"></i>
-                        </div>
-                        <h4 class="mb-3">Desarrollo Web</h4>
-                        <p class="text-muted">Creamos sitios web responsivos y funcionales adaptados a las necesidades específicas de cada cliente, con énfasis en la experiencia de usuario y el rendimiento.</p>
-                    </div>
-                </div>
+
+          <style>
+            .team-card {
+                min-height: 480px;
+            }
+
+            .team-image {
+                height: 180px;
+                object-fit: cover;
+                width: 100%;
+            }
+        </style>
+
+<div class="row g-4 justify-content-center">
+            <!-- Team Member 1 -->
+    <div class="col-sm-12 col-md-6 col-lg-3">
+        <div class="card border-0 shadow h-100 team-card">
+            <img src="{{ asset('img/michelle.jpg') }}" class="card-img-top img-fluid" alt="Alba Michelle Jiménez">
+            <div class="card-body p-4 text-center">
+                    <h5 class="card-title fw-bold">Alba Michelle Jiménez Morales</h5>
+                    <p class="text-primary mb-3">Desarrolladora Backend</p>
+                    <p class="card-text text-muted">Especializada en Laravel </p>
             </div>
-            <!-- Service 2 -->
-            <div class="col-md-4">
-                <div class="card border-0 shadow-sm h-100 service-card">
-                    <div class="card-body text-center p-4">
-                        <div class="service-icon bg-primary text-white rounded-circle mx-auto mb-4 d-flex align-items-center justify-content-center">
-                            <i class="fas fa-mobile-alt fa-2x"></i>
-                        </div>
-                        <h4 class="mb-3">Aplicaciones Móviles</h4>
-                        <p class="text-muted">Desarrollamos apps intuitivas para Android e iOS con alto rendimiento y gran experiencia de usuario, optimizadas para diferentes dispositivos.</p>
-                    </div>
+        </div>
+ </div>
+
+<!-- Team Member 2 -->
+    <div class="col-sm-12 col-md-6 col-lg-3">
+        <div class="card border-0 shadow h-100 team-card">
+            <img src="{{ asset('img/adriana.jpg') }}" class="card-img-top img-fluid" alt="Carmen Adriana Moreno">
+                <div class="card-body p-4 text-center">
+                    <h5 class="card-title fw-bold">Carmen Adriana Moreno Castillo</h5>
+                    <p class="text-primary mb-3">Diseñadora UI/UX</p>
+                    <p class="card-text text-muted">Especializada en Laravel</p>
                 </div>
+         </div>
+    </div>
+
+ <!-- Team Member 3 -->
+ <div class="col-sm-12 col-md-6 col-lg-3">
+     <div class="card border-0 shadow h-100 team-card">
+         <img src="{{ asset('img/david.jpg') }}" class="card-img-top img-fluid" alt="David Alexander Martínez">
+             <div class="card-body p-4 text-center">
+                <h5 class="card-title fw-bold">David Alexander Martínez López</h5>
+                <p class="text-primary mb-3">Ingeniero de Calidad</p>
+                <p class="card-text text-muted">Especializada en Laravel</p>
             </div>
-            <!-- Service 3 -->
-            <div class="col-md-4">
-                <div class="card border-0 shadow-sm h-100 service-card">
-                    <div class="card-body text-center p-4">
-                        <div class="service-icon bg-primary text-white rounded-circle mx-auto mb-4 d-flex align-items-center justify-content-center">
-                            <i class="fas fa-cogs fa-2x"></i>
-                        </div>
-                        <h4 class="mb-3">Automatización de Procesos</h4>
-                        <p class="text-muted">Optimizamos procesos empresariales mediante herramientas de software personalizadas que aumentan la eficiencia y reducen costos operativos.</p>
+        </div>
+    </div>
+
+ <!-- Team Member 4 -->
+<div class="col-sm-12 col-md-6 col-lg-3">
+    <div class="card border-0 shadow h-100 team-card">
+        <img src="{{ asset('img/kevin.jpg') }}" class="card-img-top img-fluid" alt="Kevin Alejandro Peña">
+            <div class="card-body p-4 text-center">
+                <h5 class="card-title fw-bold">Kevin Alejandro Peña Ramírez</h5>
+                  <p class="text-primary mb-3">Gerente de Proyectos</p>
+                    <p class="card-text text-muted">Especializada en Laravel</p>
+            </div>
+        </div>
+    </div>
+
+<!-- Team Member 5 -->
+    <div class="col-sm-12 col-md-6 col-lg-3">
+        <div class="card border-0 shadow h-100 team-card">
+            <img src="{{ asset('img/luis.jpg') }}" class="card-img-top img-fluid" alt="Luis Miguel Tao">
+                <div class="card-body p-4 text-center">
+                    <h5 class="card-title fw-bold">Luis Miguel Tao Achicue</h5>
+                    <p class="text-primary mb-3">Especialista DevOps</p>
+                    <p class="card-text text-muted">Especializada en Laravel</p>
+            </div>
+        </div>
+    </div>
+
+<!-- Team Member 6 -->
+    <div class="col-sm-12 col-md-6 col-lg-3">
+         <div class="card border-0 shadow h-100 team-card">
+            <img src="{{ asset('img/jairo.jpeg') }}" class="card-img-top img-fluid" alt="Jairo Enrique">
+                <div class="card-body p-4 text-center">
+                <h5 class="card-title fw-bold">Jairo Enrique Montes Jojoa</h5>
+                <p class="text-primary mb-3">Especialista</p>
+                <p class="card-text text-muted">Especializada en Laravel</p>
                     </div>
                 </div>
             </div>
@@ -171,125 +269,6 @@
     </div>
 </section>
 
-<!-- Team section with improved card design for full images -->
-<section class="py-5 bg-light">
-    <div class="container py-lg-4">
-        <div class="row text-center justify-content-center mb-5">
-            <div class="col-lg-8">
-                <h2 class="display-5 fw-bold">Nuestro Equipo</h2>
-                <div class="bg-primary mx-auto my-3" style="width: 80px; height: 4px;"></div>
-                <p class="lead text-muted">Conoce a los profesionales detrás de KodeLAMD</p>
-            </div>
-        </div>
-        
-        <div class="row g-4 justify-content-center">
-            <!-- Team Member 1 -->
-            <div class="col-md-6 col-lg-4 mb-4">
-                <div class="card border-0 shadow h-100 team-card">
-                    <div class="team-image-container">
-                        <img src="{{ asset('img/michelle.jpg') }}" class="card-img-top img-fluid" alt="Alba Michelle Jiménez">
-                        <div class="team-overlay d-flex align-items-center justify-content-center">
-                            <div>
-                                <a href="#" class="btn btn-sm btn-light rounded-circle mx-1"><i class="fab fa-linkedin"></i></a>
-                                <a href="#" class="btn btn-sm btn-light rounded-circle mx-1"><i class="fab fa-github"></i></a>
-                                <a href="#" class="btn btn-sm btn-light rounded-circle mx-1"><i class="fas fa-envelope"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-body p-4 text-center">
-                        <h5 class="card-title fw-bold">Alba Michelle Jiménez Morales</h5>
-                        <p class="text-primary mb-3">Desarrolladora Backend</p>
-                        <p class="card-text text-muted">Especializada en Laravel y bases de datos, con amplia experiencia en arquitectura de aplicaciones web.</p>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Team Member 2 -->
-            <div class="col-md-6 col-lg-4 mb-4">
-                <div class="card border-0 shadow h-100 team-card">
-                    <div class="team-image-container">
-                        <img src="{{ asset('img/adriana.jpg') }}" class="card-img-top img-fluid" alt="Carmen Adriana Moreno">
-                        <div class="team-overlay d-flex align-items-center justify-content-center">
-                            <div>
-                                <a href="#" class="btn btn-sm btn-light rounded-circle mx-1"><i class="fab fa-linkedin"></i></a>
-                                <a href="#" class="btn btn-sm btn-light rounded-circle mx-1"><i class="fab fa-dribbble"></i></a>
-                                <a href="#" class="btn btn-sm btn-light rounded-circle mx-1"><i class="fas fa-envelope"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-body p-4 text-center">
-                        <h5 class="card-title fw-bold">Carmen Adriana Moreno Castillo</h5>
-                        <p class="text-primary mb-3">Diseñadora UI/UX</p>
-                        <p class="card-text text-muted">Apasionada por crear experiencias digitales atractivas y funcionales centradas en el usuario.</p>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Team Member 3 -->
-            <div class="col-md-6 col-lg-4 mb-4">
-                <div class="card border-0 shadow h-100 team-card">
-                    <div class="team-image-container">
-                        <img src="{{ asset('img/david.jpg') }}" class="card-img-top img-fluid" alt="David Alexander Martínez">
-                        <div class="team-overlay d-flex align-items-center justify-content-center">
-                            <div>
-                                <a href="#" class="btn btn-sm btn-light rounded-circle mx-1"><i class="fab fa-linkedin"></i></a>
-                                <a href="#" class="btn btn-sm btn-light rounded-circle mx-1"><i class="fab fa-github"></i></a>
-                                <a href="#" class="btn btn-sm btn-light rounded-circle mx-1"><i class="fas fa-envelope"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-body p-4 text-center">
-                        <h5 class="card-title fw-bold">David Alexander Martínez López</h5>
-                        <p class="text-primary mb-3">Ingeniero de Calidad</p>
-                        <p class="card-text text-muted">Especialista en pruebas automatizadas y control de versiones para garantizar software de alta calidad.</p>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Team Member 4 -->
-            <div class="col-md-6 col-lg-4 mb-4">
-                <div class="card border-0 shadow h-100 team-card">
-                    <div class="team-image-container">
-                        <img src="{{ asset('img/kevin.jpg') }}" class="card-img-top img-fluid" alt="Kevin Alejandro Peña">
-                        <div class="team-overlay d-flex align-items-center justify-content-center">
-                            <div>
-                                <a href="#" class="btn btn-sm btn-light rounded-circle mx-1"><i class="fab fa-linkedin"></i></a>
-                                <a href="#" class="btn btn-sm btn-light rounded-circle mx-1"><i class="fab fa-twitter"></i></a>
-                                <a href="#" class="btn btn-sm btn-light rounded-circle mx-1"><i class="fas fa-envelope"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-body p-4 text-center">
-                        <h5 class="card-title fw-bold">Kevin Alejandro Peña Ramírez</h5>
-                        <p class="text-primary mb-3">Gerente de Proyectos</p>
-                        <p class="card-text text-muted">Encargado de la planificación estratégica y comunicación efectiva con los clientes.</p>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Team Member 5 -->
-            <div class="col-md-6 col-lg-4 mb-4">
-                <div class="card border-0 shadow h-100 team-card">
-                    <div class="team-image-container">
-                        <img src="{{ asset('img/luis.jpg') }}" class="card-img-top img-fluid" alt="Luis Miguel Tao">
-                        <div class="team-overlay d-flex align-items-center justify-content-center">
-                            <div>
-                                <a href="#" class="btn btn-sm btn-light rounded-circle mx-1"><i class="fab fa-linkedin"></i></a>
-                                <a href="#" class="btn btn-sm btn-light rounded-circle mx-1"><i class="fab fa-github"></i></a>
-                                <a href="#" class="btn btn-sm btn-light rounded-circle mx-1"><i class="fas fa-envelope"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-body p-4 text-center">
-                        <h5 class="card-title fw-bold">Luis Miguel Tao Achicue</h5>
-                        <p class="text-primary mb-3">Especialista DevOps</p>
-                        <p class="card-text text-muted">Experto en despliegue de soluciones en la nube y automatización de infraestructura.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
 
 <!-- Call to Action section -->
 <section class="py-5 bg-primary text-white text-center">
